@@ -30,11 +30,15 @@ group :development do
   gem 'sqlite3'
 end
 
-group :test do
+group :test , :development do
   gem "rspec-rails", '2.14.2'
   gem "factory_girl_rails"
   gem 'ffaker'
+  gem 'shoulda-matchers'
+  gem 'pry-rails'
 end
+
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
